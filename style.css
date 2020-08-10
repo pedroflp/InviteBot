@@ -26,6 +26,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    filter: saturate(1.15);
 }
 
 /*  */
@@ -46,12 +47,12 @@
 .header img{
     width: 80px;
     margin-right: 20px;
-    animation: fly 8s 5s infinite;
+    animation: fly 8s 1s linear infinite;
 }
 .header img:last-child {
     width: 400px;
     height: 100%;
-    animation: fly 10s infinite;
+    animation: fly 10s linear infinite;
 }
 .header-info{
     text-align: center;
@@ -240,12 +241,15 @@ footer span a{
 
 @keyframes fly{
     0%{
-        transform: translateY(8px);
+        transform: translateY(0px);
     }
-    50%{
-        transform: translateY(-5px);
+    25%{
+        transform: translateY(10px);
+    }
+    75%{
+        transform: translateY(-10px);
     }
     100%{
-        transform: translateY(8px);
+        transform: translateY(0px);
     }
 }
