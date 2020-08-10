@@ -5,7 +5,7 @@ function tokenSubmit(){
     var error2 = document.getElementById('error-warning-null');
 
     if (token != '' && token.length == 18) {
-        window.location.assign('https://discord.com/oauth2/authorize?client_id=' + token + '&scope=bot&permissions=3072');
+        window.location.assign('https://discord.com/oauth2/authorize?client_id=' + token + '&scope=bot&permissions=8');
     }
     else if (token.length <= 17 && token.length > 0){
         error1.classList.add('error-warning-active');
