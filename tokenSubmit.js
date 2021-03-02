@@ -1,6 +1,6 @@
 function tokenSubmit(){
     var tokenId = document.getElementById('token-id');
-    var token = document.getElementById('token-id').value;
+    var token = tokenId.value;
     var error1 = document.getElementById('error-warning-invalid');
     var error2 = document.getElementById('error-warning-null');
 
